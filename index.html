@@ -1,93 +1,115 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  margin: 0 auto;
-}
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+    }
 
-.card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 10px;
-  background-color: #fff;
-}
+    .card {
+      width: 300px;
+      margin: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-.logo {
-  width: 50px;
-  height: 50px;
-}
+    .logo {
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+    }
 
-.text {
-  font-size: 20px;
-  font-weight: bold;
-}
+    .text {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
 
-.button {
-  background-color: red;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-</style>
+    .button {
+      background-color: red;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Mobile-specific styles */
+    @media only screen and (max-width: 768px) {
+      .card {
+        width: 100%;
+        margin: 10px;
+      }
+    }
+
+    /* Desktop-specific styles */
+    @media only screen and (min-width: 769px) {
+      .container {
+        justify-content: space-between;
+      }
+      .card {
+        width: 300px;
+        margin: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
-  <div class="card">
-    <img src="https://tse4.mm.bing.net/th?id=OIP.qVSkhD_NkUrnlYYuXfcGnAHaD4&pid=Api&P=0&h=180" alt="XL Logo" class="logo">
-    <div class="text">5 GB</div>
-    <div>Gratis 7 hari</div>
-    <a href="https://sfl.gl/szI1bGi" class="button">AMBIL</a>
-  </div>
+  <div class="container">
+    <div class="card">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.qVSkhD_NkUrnlYYuXfcGnAHaD4&pid=Api&P=0&h=180" alt="XL Logo" class="logo">
+      <div class="text">5 GB</div>
+      <div>Gratis 7 hari</div>
+      <a href="https://sfl.gl/szI1bGi" class="button">AMBIL</a>
+    </div>
 
-  <div class="card">
-    <img src="https://tse4.mm.bing.net/th?id=OIP.qVSkhD_NkUrnlYYuXfcGnAHaD4&pid=Api&P=0&h=180" alt="XL Logo" class="logo">
-    <div class="text">7 GB</div>
-    <div>Gratis 7 hari</div>
-    <a href="https://sfl.gl/szI1bGi" class="button">AMBIL</a>
-  </div>
+    <div class="card">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.qVSkhD_NkUrnlYYuXfcGnAHaD4&pid=Api&P=0&h=180" alt="XL Logo" class="logo">
+      <div class="text">7 GB</div>
+      <div>Gratis 7 hari</div>
+      <a href="https://sfl.gl/szI1bGi" class="button">AMBIL</a>
+    </div>
 
-  <div class="card">
-    <img src="https://tse4.mm.bing.net/th?id=OIP.qVSkhD_NkUrnlYYuXfcGnAHaD4&pid=Api&P=0&h=180" alt="XL Logo" class="logo">
-    <div class="text">10 GB</div>
-    <div>Gratis 7 hari</div>
-    <a href="https://sfl.gl/szI1bGi" class="button">AMBIL</a>
-  </div>
+    <div class="card">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.qVSkhD_NkUrnlYYuXfcGnAHaD4&pid=Api&P=0&h=180" alt="XL Logo" class="logo">
+      <div class="text">10 GB</div>
+      <div>Gratis 7 hari</div>
+      <a href="https://sfl.gl/szI1bGi" class="button">AMBIL</a>
+    </div>
 
-  <div class="card">
-    <img src="https://4.bp.blogspot.com/-Br1ogLkG0kY/UNok1XX3WiI/AAAAAAAAEak/pTpUXcqmcqo/s1600/Logo+TELKOMSEL.jpg" alt="Telkomsel Logo" class="logo">
-    <div class="text">2,5 GB</div>
-    <div>Gratis 7 hari</div>
-    <a href="https://sfl.gl/szI1bGi" class="button">AMBIL</a>
-  </div>
+    <div class="card">
+      <img src="https://4.bp.blogspot.com/-Br1ogLkG0kY/UNok1XX3WiI/AAAAAAAAEak/pTpUXcqmcqo/s1600/Logo+TELKOMSEL.jpg" alt="Telkomsel Logo" class="logo">
+      <div class="text">2,5 GB</div>
+      <div>Gratis 7 hari</div>
+      <a href="https://sfl.gl/szI1bGi" class="button">AMBIL</a>
+    </div>
 
-  <div class="card">
-    <img src="https://4.bp.blogspot.com/-Br1ogLkG0kY/UNok1XX3WiI/AAAAAAAAEak/pTpUXcqmcqo/s1600/Logo+TELKOMSEL.jpg" alt="Telkomsel Logo" class="logo">
-    <div class="text">5 GB</div>
-    <div>Gratis 7 hari</div>
-    <a href="https://sfl.gl/szI1bGi" class="button">AMBIL</a>
-  </div>
+    <div class="card">
+      <img src="https://4.bp.blogspot.com/-Br1ogLkG0kY/UNok1XX3WiI/AAAAAAAAEak/pTpUXcqmcqo/s1600/Logo+TELKOMSEL.jpg" alt="Telkomsel Logo" class="logo">
+      <div class="text">5 GB</div>
+      <div>Gratis 7 hari</div>
+      <a href="https://sfl.gl/szI1bGi" class="button">AMBIL</a>
+    </div>
 
-  <div class="card">
-    <img src="https://4.bp.blogspot.com/-Br1ogLkG0kY/UNok1XX3WiI/AAAAAAAAEak/pTpUXcqmcqo/s1600/Logo+TELKOMSEL.jpg" alt="Telkomsel Logo" class="logo">
-    <div class="text">7,5 GB</div>
-    <div>Gratis 7 hari</div>
-    <a href="https://sfl.gl/szI1bGi" class="button">AMBIL</a>
+    <div class="card">
+      <img src="https://4.bp.blogspot.com/-Br1ogLkG0kY/UNok1XX3WiI/AAAAAAAAEak/pTpUXcqmcqo/s1600/Logo+TELKOMSEL.jpg" alt="Telkomsel Logo" class="logo">
+      <div class="text">7,5 GB</div>
+      <div>Gratis 7 hari</div>
+      <a href="https://sfl.gl/szI1bGi" class="button">AMBIL</a>
+    </div>
   </div>
-</div>
 
 </body>
 </html>

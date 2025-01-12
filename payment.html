@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('path/to/your/background-image.jpg'); /* Ganti dengan path ke gambar latar belakang */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            width: 400px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .button {
+            background-color: #28a745; /* Warna hijau */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            margin-bottom: 20px;
+        }
+        .button:hover {
+            background-color: #218838; /* Warna saat hover */
+        }
+        .payment-methods {
+            display: none; /* Sembunyikan metode pembayaran secara default */
+            margin-top: 20px;
+            text-align: left;
+        }
+        .method {
+            background-color: #f8f9fa; /* Warna latar belakang metode */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .method:hover {
+            background-color: #e2e6ea; /* Warna saat hover */
+        }
+    </style>
+    <script>
+        function togglePaymentMethods() {
+            const paymentMethods = document.getElementById('paymentMethods');
+            paymentMethods.style.display = paymentMethods.style.display === 'none' ? 'block' : 'none';
+        }
 
+        function selectPaymentMethod(method) {
+            alert('Metode pembayaran yang dipilih: ' + method);
+            // Tambahkan logika untuk melanjutkan proses pembayaran
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pembayaran</h1>
+        <button class="button" onclick="togglePaymentMethods()">Pilih Metode Pembayaran</button>
+        
+        <div class="payment-methods" id="paymentMethods">
+            <div class="method" onclick="selectPaymentMethod('Kartu Kredit')">Kartu Kredit</div>
+            <div class="method" onclick="selectPaymentMethod('Transfer Bank')">Transfer Bank</div>
+            <div class="method" onclick="selectPaymentMethod('E-Wallet')">E-Wallet</div>
+            <div class="method" onclick="selectPaymentMethod('Cash')">Cash</div>
+        </div>
+    </div>
+
+</body>
+</html>

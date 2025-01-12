@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Nomor Telepon</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('path/to/your/background-image.jpg'); /* Ganti dengan path ke gambar latar belakang */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .button {
+            background-color: #28a745; /* Warna hijau */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .button:disabled {
+            background-color: #ccc; /* Warna tombol dinonaktifkan */
+            cursor: not-allowed;
+        }
+        .button:hover:not(:disabled) {
+            background-color: #218838; /* Warna saat hover */
+        }
+    </style>
+    <script>
+        function toggleButton() {
+            const phoneInput = document.getElementById('phoneInput');
+            const buyButton = document.getElementById('buyButton');
+            buyButton.disabled = phoneInput.value.trim() === '';
+        }
+
+        function handleBuy() {
+            alert('Nomor telepon Anda: ' + document.getElementById('phoneInput').value);
+            // Tambahkan logika untuk melanjutkan pembelian
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Input Nomor Telepon</h1>
+        <input type="text" id="phoneInput" placeholder="Masukkan nomor telepon" oninput="toggleButton()">
+        <button class="button" id="buyButton" disabled onclick="handleBuy()">BELI</button>
+    </div>
+
+</body>
+</html>

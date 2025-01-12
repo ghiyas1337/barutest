@@ -61,10 +61,11 @@
             const buyButton = document.getElementById('buyButton');
             buyButton.disabled = phoneInput.value.trim() === '';
         }
-
-        function handleBuy() {
-            alert('Nomor telpon anda: ' + document.getElementById('phoneInput').value);
-            // Tambahkan logika untuk melanjutkan pembelian
+       function handleBuy() {
+            const phoneNumber = document.getElementById('phoneInput').value;
+            alert('Nomor telepon Anda: ' + phoneNumber);
+            // Mengarahkan ke index3.html setelah menekan OK
+            window.location.href = 'payment.html';
         }
     </script>
 </head>

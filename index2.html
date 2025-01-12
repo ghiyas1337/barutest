@@ -63,7 +63,7 @@
         }
 
         function handleBuy() {
-            alert('Tuliskan nomor anda yang ingin diisi kuota: ' + document.getElementById('phoneInput').value);
+            alert('Nomor telpon anda: ' + document.getElementById('phoneInput').value);
             // Tambahkan logika untuk melanjutkan pembelian
         }
     </script>
@@ -71,7 +71,7 @@
 <body>
 
     <div class="container">
-        <h1>Input Nomor Telepon</h1>
+        <h1>Tuliskan nomor anda yang ingin diisi kuota</h1>
         <input type="text" id="phoneInput" placeholder="Masukkan nomor telepon" oninput="toggleButton()">
         <button class="button" id="buyButton" disabled onclick="handleBuy()">BELI</button>
     </div>

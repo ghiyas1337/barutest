@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <style>
     body {
-      background-image: url('indosat-unlimited.jpg'); /* Ganti dengan path ke gambar latar belakang */
+      background-image: url('path/to/your/background-image.jpg'); /* Ganti dengan path ke gambar latar belakang */
       background-size: cover; /* Mengatur gambar agar menutupi seluruh latar belakang */
       background-position: center; /* Memusatkan gambar */
       font-family: Arial, sans-serif; /* Gaya font */
@@ -21,6 +21,11 @@
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan */
       margin-bottom: 20px; /* Jarak antar kartu */
       padding: 15px; /* Padding dalam kartu */
+    }
+    .button:disabled {
+      background-color: #ccc; /* Warna latar belakang tombol yang dinonaktifkan */
+      color: #666; /* Warna teks tombol yang dinonaktifkan */
+      cursor: not-allowed; /* Menunjukkan bahwa tombol tidak dapat diklik */
     }
   </style>
   <script>
@@ -37,7 +42,7 @@
       <div class="text">15 GB</div>
       <div>10RB</div>
       <div class="additional-text">Tersedia untuk hari ini</div> <!-- Tambahan tulisan -->
-      <button class="button" onclick="redirectToIndex2()">BELI</button>
+      <button class="button" disabled>BELI</button> <!-- Tombol dinonaktifkan -->
     </div>
 
     <div class="card">
@@ -65,7 +70,7 @@
     </div>
 
     <div class="card">
-      <img src="https://4.bp.blogspot.com/-Br1ogLkG0kY/UNok1XX3WiI/AAAAAAAAEak/pTpUXcqmcqo/s1600/Logo+TELKOMSEL.jpg" alt="Telkomsel Logo" class="logo">
+      <img src="https://4.bp.blogspot.com/-Br1ogLkG0kY/UNok1XX3WiI/AAAAAAAAEak/pTpUXcqmcqo/s1600 /Logo+TELKOMSEL.jpg" alt="Telkomsel Logo" class="logo">
       <div class="text">25 GB</div>
       <div>25RB</div>
       <div class="additional-text">Tersedia untuk hari ini</div> <!-- Tambahan tulisan -->

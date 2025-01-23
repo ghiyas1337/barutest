@@ -80,11 +80,32 @@
         <button class="button" onclick="togglePaymentMethods()">Pilih Metode Pembayaran</button>
         
         <div class="payment-methods" id="paymentMethods">
-            <div class="method" onclick="selectPaymentMethod('Kartu Kredit')">Kartu Kredit</div>
-            <div class="method" onclick="selectPaymentMethod('Transfer Bank')">Transfer Bank</div>
-            <div class="method" onclick="selectPaymentMethod('E-Wallet')">E-Wallet</div>
-            <div class="method" onclick="selectPaymentMethod('Cash')">Cash</div>
-        </div>
+    <div class="method" onclick="selectPaymentMethod('Transfer Bank')">Transfer Bank</div>
+    <div class="method" onclick="selectPaymentMethod('E-Wallet')">E-Wallet</div>
+</div>
+
+<div id="ewalletOptions" style="display: none;">
+    <div class="ewallet-option" onclick="selectEWallet('Dana')">Dana</div>
+    <div class="ewallet-option" onclick="selectEWallet('GoPay')">GoPay</div>
+    <div class="ewallet-option" onclick="selectEWallet('OVO')">OVO</div>
+    <div class="ewallet-option" onclick="selectEWallet('LinkAja')">LinkAja</div>
+</div>
+
+<script>
+    function selectPaymentMethod(method) {
+        if (method === 'E-Wallet') {
+            document.getElementById('ewalletOptions').style.display = 'block';
+        } else {
+            document.getElementById('ewalletOptions').style.display = 'none';
+        }
+        console.log('Selected payment method:', method);
+    }
+
+    function selectEWallet(wallet) {
+        console.log('Selected e-wallet:', wallet);
+        // Lakukan tindakan lain yang diperlukan setelah memilih e-wallet
+    }
+</script>
     </div>
 
 </body>
